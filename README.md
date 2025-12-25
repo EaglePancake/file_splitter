@@ -6,14 +6,12 @@ A simple command-line utility written in C for splitting large files into smalle
 
 - Split files into a specified number of equal parts
 - Split files into parts of a specified size (in bytes)
-- Efficient chunk-based reading and writing for large files
 - Cross-platform compatibility (Windows/Linux/macOS)
 
 ## Requirements
 
 - C compiler (GCC, Clang, MSVC)
 - CMake (version 3.10 or higher)
-- Standard C libraries
 
 ## Building
 
@@ -41,7 +39,7 @@ A simple command-line utility written in C for splitting large files into smalle
 
 ## Usage
 
-The compiled executable is typically named `file_splitter.exe` (Windows) or `file_splitter` (Linux/macOS).
+The compiled executable is named `file_splitter.exe` (Windows) or `file_splitter` (Linux/macOS).
 
 ### Basic Syntax
 ```
@@ -69,7 +67,7 @@ file_splitter s input_file.txt 1MB
 This creates parts of 1MB each. The last part may be smaller if the file size doesn't divide evenly.
 
 Supported formats:
-- `1048576` (bytes)
+- `1048` (bytes)
 - `1KB` (1024 bytes)
 - `1MB` (1,048,576 bytes)  
 - `1GB` (1,073,741,824 bytes)
@@ -101,7 +99,6 @@ The program provides detailed information about the splitting process:
 - The original file remains unchanged
 - Part files are created in the same directory as the original file
 - Part files are named with `.part{N}` suffix where N is the part number starting from 1
-- The program uses binary mode for reading/writing to preserve file integrity
 
 ## Limitations
 
