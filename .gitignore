@@ -1,0 +1,70 @@
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# Build directories
+build/
+cmake-build-*/
+out/
+bin/
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Static libraries
+*.lai
+*.la
+*.a
+
+# Autotools files
+Makefile.in
+aclocal.m4
+autom4te.cache/
+configure
+config.log
+config.status
+libtool
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
