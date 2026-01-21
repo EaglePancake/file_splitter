@@ -68,9 +68,9 @@ This creates parts of 1MB each. The last part may be smaller if the file size do
 
 Supported formats:
 - `1048` (bytes)
-- `1KB` (1024 bytes)
-- `1MB` (1,048,576 bytes)  
-- `1GB` (1,073,741,824 bytes)
+- `1KB`
+- `1MB`
+- `1GB`
 
 ### Examples
 
@@ -85,27 +85,8 @@ file_splitter s application.log 100MB
 file_splitter s backup.tar 1GB
 ```
 
-## Output
-
-The program provides detailed information about the splitting process:
-
-- Original file size
-- Number of parts or part size
-- Size of each part
-- Size of the last part (if different)
-
 ## Notes
 
 - The original file remains unchanged
 - Part files are created in the same directory as the original file
-- Part files are named with `.part{N}` suffix where N is the part number starting from 1
-
-## Limitations
-
-- File paths with spaces may need to be quoted
-- Very large files (>2GB) may have issues on 32-bit systems due to integer overflow
-- No progress indicator for large files
-
-## License
-
-This project is open source. Feel free to use and modify as needed.
+- Part files are named with `.part{N}` suffix.
